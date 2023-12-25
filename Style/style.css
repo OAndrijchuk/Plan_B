@@ -275,10 +275,6 @@ p {
     transition: all 0.8s ease 0.8s;
 }
 .working {
-    /* background-image: url(../Picture/Background_img/work-background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50%; */
     background-color: rgb(94, 85, 80);
     position: relative;
     width: 100%;
@@ -326,7 +322,6 @@ p {
 }
 
 .rehabilitation{
-    /* background-image: url(../Picture/Background_img/work-background.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;

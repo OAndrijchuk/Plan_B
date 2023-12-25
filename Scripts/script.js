@@ -24,7 +24,7 @@ const isMobile = {
             isMobile.Windows());
     }
 };
-//Меню бургер
+
 const iconMenu = document.querySelector('.menu-icon');
 const menuBody = document.querySelector('.nav-list');
 if (iconMenu) {
@@ -52,7 +52,6 @@ if (isMobile.any()) {
     document.body.classList.add('-pc');
 }
 
-//Прокрутка при клікові
 const menuLinks = document.querySelectorAll('.drop-menu-link[data-goto]');
 if (menuLinks.length > 0) {
     menuLinks.forEach(menuLink => {
@@ -64,7 +63,7 @@ if (menuLinks.length > 0) {
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
-            //Закриття бургерменю після кліку
+
             if (iconMenu.classList.contains('-active')) {
                 document.body.classList.remove('-lock');
                 iconMenu.classList.remove('-active');
@@ -81,7 +80,7 @@ if (menuLinks.length > 0) {
         }
     }
 }
-//Анімація елементів
+
 const animItems = document.querySelectorAll('.-anim-items');
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
